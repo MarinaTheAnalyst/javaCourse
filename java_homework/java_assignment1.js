@@ -83,9 +83,10 @@ document.write(word + ' ' + course + ' ' +  website + ' ' + count);
 
 let name = prompt('Marina');
 let surname = prompt('Gontar');
-let age = prompt(24);
+let age = prompt('24');
 
 let output = prompt(name + ' ' + surname + ' ' + age);
+console.log(output);
 
 // 4 task/let a = 100; let b = '100'; let c = true;
 
