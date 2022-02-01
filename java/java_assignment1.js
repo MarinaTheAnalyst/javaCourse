@@ -56,31 +56,36 @@ document.write(word + ' ' + course + ' ' +  website + ' ' + count);
 // alert('This is a solid phrase to enjoy' + ' ' + country);
 
 //3 3 слова які являються вашими Імям, По-Батькові та роками.
-let firstName = 'Marina';
-let secondName = 'Gontar';
-let dateOf = 1997;
+// let firstName = 'Marina';
+// let secondName = 'Gontar';
+// let dateOf = 1997;
+//
+// let cohort = firstName + ' ' + secondName + ' ' + dateOf;
+// console.log(cohort);
+//
+// let person = {
+//     name: 'Marina',
+//     surname: 'Gontar',
+//     date: 1997
+//
+// }
+//
+// console.log(person.name);
+// console.log(person.surname);
+// console.log(person.date);
 
-let cohort = firstName + ' ' + secondName + ' ' + dateOf;
-console.log(cohort);
 
-let person = {
-    name: 'Marina',
-    surname: 'Gontar',
-    date: 1997
+// prompt(person.name);
+// prompt(person.surname);
+// prompt(person.date)
+//
+// prompt("Вітаю" + ' ' + person.name + ' ' + person.surname + ' ' + "Тобі" + ' ' + 24 + ' ' + 'роки');
 
-}
+let name = prompt('Marina');
+let surname = prompt('Gontar');
+let age = prompt(24);
 
-console.log(person.name);
-console.log(person.surname);
-console.log(person.date);
-
-
-prompt(person.name);
-prompt(person.surname);
-prompt(person.date)
-
-prompt("Вітаю" + ' ' + person.name + ' ' + person.surname + ' ' + "Тобі" + ' ' + 24 + ' ' + 'роки');
-
+let output = prompt(name + ' ' + surname + ' ' + age);
 
 // 4 task/let a = 100; let b = '100'; let c = true;
 
