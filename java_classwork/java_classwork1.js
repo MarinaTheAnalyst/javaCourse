@@ -2,7 +2,7 @@
 //1. Створити масив
 // з 10 чисел (можна використовувати Math.random Та Math.floor). Скласти результат цих чисел в змінній result.
 
-let result = Math.floor(Math.random()*10);
+let result = Array.from({length:10}, () => Math.floor(Math.random()*10));
 console.log(result);
 
 //2. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр

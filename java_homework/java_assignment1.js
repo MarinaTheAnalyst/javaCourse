@@ -3,9 +3,13 @@
 // 1 task// 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false//+ alert, document, console
 
 let phrase= 'hello';
+    phrase='owu';
 let school = 'owu';
+    school='com';
 let ending = 'com';
+    ending='ru';
 let country = 'ua';
+    country='pl';
 
 
 console.log(phrase, school, country, ending);
@@ -17,7 +21,7 @@ console.log(phrase, school, country, ending);
 
 
 let float = ['3.14', '2.7']
-    numbersFloat = float.map(Number);
+let numbersFloat = float.map(Number);
 console.log(numbersFloat);
 
 document.write(phrase + ' ' + school + ' ' + country + ' ' + ending + ' ' + numbersFloat);
