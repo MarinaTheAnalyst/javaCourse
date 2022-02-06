@@ -1,6 +1,6 @@
 //1. Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
 // (в першу, другу, третю или четверту частину години).
-//     let time = prompt('enter your number between 0 and 59');
+//     let time = +prompt('enter your number between 0 and 59');
 //     if (time >= 0 && time <= 14) {
 //         console.log('first');
 //     } else if (time >= 15 && time <= 30) {
@@ -16,7 +16,7 @@
 // 2. У змінній day дано якесь число від 1 до 31.
 // Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
 
-    // let day = prompt ('provide the date of the month meaning from 1 to 31');
+    // let day = +prompt ('provide the date of the month meaning from 1 to 31');
     // if (day >=1 && day <= 10) {
     //     console.log('Beginning of the month')
     // } else if (day >=11 && day <= 20) {
