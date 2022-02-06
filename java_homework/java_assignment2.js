@@ -76,24 +76,24 @@ console.log(value);
     //         break;
     //     case 2:
     //         console.log('Going on a stroll');
-    //         break
+    //         break;
     //      case 3:
     //             console.log('Watching Netflix');
-    //             break
+    //             break;
     //     case 4:
     //             console.log('Tidying room');
-    //             break
+    //             break;
     //     case 5:
     //             console.log('Preparing food');
-    //             break
+    //             break;
     //     case 6:
     //             console.log('Going on an exhibition');
-    //             break
+    //             break;
     //     case 7:
     //             console.log('Going on a stroll');
-    //             break
+    //             break;
     //     default:
-    //         console.log ('Does not match a requirement')
+    //         console.log ('Does not match a requirement');
     //     }
 
 
