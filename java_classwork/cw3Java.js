@@ -21,7 +21,7 @@
 
     // let i = 0;
     //    while (i<arr.length) {
-    //     if (arr[i] % 2 === 1) {
+    //     if (i % 2 === 1) {
     //      console.log(arr[i]);
     //     };
     //     i++
@@ -30,12 +30,12 @@
 
 
 // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
-
-    // for (let i = 0; i < arr.length; i++) {
-    //     if (arr[i] % 2 === 1) {
-    //         console.log(arr[i]);
-    //     }
-    // }
+//
+//     for (let i = 0; i < arr.length; i++) {
+//         if (i % 2 === 1) {
+//             console.log(arr[i]);
+//         }
+//     }
 
 
 // 5. перебрати циклом while та вивести  числа тільки парні  значення
@@ -43,7 +43,7 @@
 
 // let i = 0;
 //    while (i<arr.length) {
-//     if (arr[i] % 2 === 0) {
+//     if (i % 2 === 0) {
 //      console.log(arr[i]);
 //     };
 //     i++
@@ -51,7 +51,7 @@
 
 // 6. перебрати циклом for та вивести  числа тільки парні  значення
 //             for (let i = 0; i < arr.length; i++) {
-//                 if (arr[i] % 2 === 0) {
+//                 if (i % 2 === 0) {
 //                     console.log(arr[i]);
 //                 }
 //             }
@@ -59,7 +59,7 @@
 // 7. замінити кожне число кратне 3 на слово "okten"
 
                 // for (let i = 0; i < arr.length; i++) {
-                //     if (arr[i] % 3 === 0)
+                //     if (i % 3 === 0)
                 //     {  arr[i] = "okten";
                 //         console.log(arr[i]);
                 //     }
@@ -88,7 +88,7 @@
 //         let i = arr.length - 1;
 //            while (i >= 0) {
 //                {
-//                if (arr[i] % 2 === 1) {
+//                if (i % 2 === 1) {
 //                    console.log(arr[i]);
 //                };
 //            }
@@ -98,7 +98,7 @@
 
 //9.4
 //             for (let i = arr.length - 1; i >= 0; i--) {
-//                 { if (arr[i] % 2 === 1)
+//                 { if (i % 2 === 1)
 //                 {console.log(arr[i]);}
 //                 };
 //
@@ -106,13 +106,13 @@
 
 
 //9.5
-                // let i = 0;
-                //    while (i<arr.length) {
-                //     if (arr[i] % 2 === 0) {
-                //      console.log(arr[i]);
-                //     };
-                //     i++
-                //    }
+//                 let i = 0;
+//                    while (i<arr.length) {
+//                     if (i % 2 === 0) {
+//                      console.log(arr[i]);
+//                     };
+//                     i++
+//                    }
 
 //9.6
 //             for (let i = arr.length - 1; i >= 0;  i--) {
@@ -122,10 +122,10 @@
 //             }
 
 //9.7
-                for (let i = arr.length - 1; i >= 0; i--) {
-                    if (arr[i] % 3 === 0)
-                    {  arr[i] = "okten";
-                        console.log(arr[i]);
-                    }
-                }
-
+//                 for (let i = arr.length - 1; i >= 0; i--) {
+//                     if (i % 3 === 0)
+//                     {  arr[i] = "okten";
+//                         console.log(arr[i]);
+//                     }
+//                 }
+//
