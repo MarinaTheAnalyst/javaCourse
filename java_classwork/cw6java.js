@@ -11,31 +11,35 @@
 // let n1 = 'Harry..Potter';
 // let n2 = 'Ron---Whisley';
 // let n3 = 'Hermione__Granger';
+// let n4 = 'Melissa';
 //
 //
 //     let output = (name) => {
 //         if(name.includes('..')){
-//        console.log(name.replaceAll('..', ' '));
-//         }
-//         if (name.includes('---'))
+//                 return name.replaceAll('..', ' ');
+//         } else if (name.includes('---'))
 //         {
-//        console.log(name.replaceAll('---', ' '));
+//             return name.replaceAll('---', ' ');
 //         }
-//         if (name.includes('__'))
+//         else if (name.includes('__'))
 //         {
-//        console.log(name.replaceAll('__', ' '));
-//         } ;
+//            return name.replaceAll('__', ' ');
+//         }
+//         else
+//         {console.log(name)
+//         }
 //
 //     }
-
-
-// let out = (name) => {
-//         return name.replaceAll('..', ' ');
-// } // like an option
-
+//
+//
+// // let out = (name) => {
+// //         return name.replaceAll('..', ' ');
+// // } // like an option
+//
 // console.log(output(n1));
 // console.log(output(n2));
 // console.log(output(n3));
+// console.log(output(n4));
 
 
 //2. 2.1 - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
@@ -173,13 +177,13 @@
 //  -- відсортувати його за спаданням за monthDuration
 //  -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
 
-    let coursesAndDurationArray = [
-        {title: 'JavaScript Complex', monthDuration: 5},
-        {title: 'Java Complex', monthDuration: 6},
-        {title: 'Python Complex', monthDuration: 6},
-        {title: 'QA Complex', monthDuration: 4},
-        {title: 'FullStack', monthDuration: 7},
-        {title: 'Frontend', monthDuration: 4}
-    ];
-    console.log(coursesAndDurationArray.sort((a,b)=> b.monthDuration-a.monthDuration));
-    console.log(coursesAndDurationArray.filter(month => month.monthDuration > 5));
+    // let coursesAndDurationArray = [
+    //     {title: 'JavaScript Complex', monthDuration: 5},
+    //     {title: 'Java Complex', monthDuration: 6},
+    //     {title: 'Python Complex', monthDuration: 6},
+    //     {title: 'QA Complex', monthDuration: 4},
+    //     {title: 'FullStack', monthDuration: 7},
+    //     {title: 'Frontend', monthDuration: 4}
+    // ];
+    // console.log(coursesAndDurationArray.sort((a,b)=> b.monthDuration-a.monthDuration));
+    // console.log(coursesAndDurationArray.filter(month => month.monthDuration > 5));
