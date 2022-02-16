@@ -93,25 +93,22 @@
 // someeMAIL@gmail.com
 // someeMAIL@i.ua
 // some.email@gmail.com
-
-    let funValidate = (mail) => {
-    if (mail.includes('@') === false){
-        console.log('not valid');
-    }
-    if (mail.lastIndexOf('.') < mail.indexOf('@', 0)+4) {
-                console.log('not valid');
-        }
-
-    else {
-        return mail.toLowerCase();
-            }
-    }
 let mail = 'someeMAIL@i.ua';
-// let mail = 'someeMAILi.ua';
-// let mail = 'someeMAIL@ii.ua';
 
-    // let mail = 'someeMAIL@gmail.com'
-    console.log(funValidate(mail));
+
+ let fun = (str, char, from) =>{
+    return (str.indexOf(char,from) !== -1) ? //? : --> is true :(or) false
+     str.indexOf(char,from): false
+ }
+    let validation = (email) =>{
+        let emailCh = fun(email,'@',2);
+        let pointCh = fun(email, '.', emailCh +3)
+            return (emailCh && pointCh) ? 'Your Email is valid':'Your email is NOT valid'
+    }
+
+
+    console.log(validation(mail));
+
 
 
 // 4. Напишіть функцію count(str, stringsearch), яка повертає кількість символів stringsearch у рядку str.
