@@ -63,5 +63,7 @@ let funcSort = user.sort((a,b) => a.id - b.id); // ((a,b) => b.id - a.id);
 
 //5. - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
 
+
     let sortFunc = database.sort((a,b) => a.order.length - b.order.length);
-    console.log(sortFunc);
+        let mapping = sortFunc.map((item=> item.order));
+    console.log(sortFunc, mapping);
