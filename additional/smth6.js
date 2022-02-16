@@ -133,8 +133,7 @@ let mail = 'someeMAIL@i.ua';
 // let cutString = (str, n) => {
 //     return str.split().slice(0,n);
 // }
-//
-//
+
 // let str = "Сила тяжести приложена к центру масс тела";
-// document.writeln(cutString(str, 5)) // 'Сила тяжести приложена к центру'
+// document.writeln(cutString(str, 2)) // 'Сила тяжести приложена к центру'
 
