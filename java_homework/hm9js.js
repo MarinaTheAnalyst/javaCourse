@@ -63,6 +63,31 @@ let coursesAndDurationArray = [
 // в якому буде <h1 class='heading'>  з title  елементу, та <p class='description'> з monthDuration елементу.
 // Завдання робити через цикли.
 
+// for (let item of coursesAndDurationArray) {
+//     let div = document.createElement('div');
+//     div.classList.add('item');
+//
+//     let h1 = document.createElement('h1');
+//     h1.classList.add('heading');
+//     h1.innerText = `Title: ${item.title}`;
+//     h1.style.color = 'deeppink';
+//
+//
+//     let p = document.createElement('p');
+//     p.classList.add('description');
+//     p.innerText = `month_duration: ${item.monthDuration}`;
+//     p.style.background = 'black';
+//     p.style.color = 'silver';
+//     p.style.fontSize = '20px'
+//
+//     div.append(h1);
+//     div.append(p);
+//     document.body.append(div);
+// }
+
+
+// ----------------------- the difference between appendChild and append----------------------
+
 for (let item of coursesAndDurationArray) {
     let div = document.createElement('div');
     div.classList.add('item');
@@ -72,17 +97,16 @@ for (let item of coursesAndDurationArray) {
     h1.innerText = `Title: ${item.title}`;
     h1.style.color = 'deeppink';
 
+    let div1 = document.createElement('div');
+    div1.classList.add('item');
 
-    let p = document.createElement('p');
-    p.classList.add('description');
-    p.innerText = `month_duration: ${item.monthDuration}`;
-    p.style.background ='black';
-    p.style.color = 'silver';
-    p.style.fontSize = '20px'
+    let h = document.createElement('h1');
+    h.classList.add('heading');
+    h.innerText = `Month: ${item.monthDuration}`;
+    h.style.color = 'deeppink';
 
-    div.append(h1);
-    div.append(p);
-    document.body.append(div);
-
+    div.appendChild(h1);
+    div1.appendChild(h);
+    document.body.append(div, div1);
 
 }
