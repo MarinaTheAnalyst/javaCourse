@@ -88,25 +88,25 @@ let coursesAndDurationArray = [
 
 // ----------------------- the difference between appendChild and append----------------------
 
-for (let item of coursesAndDurationArray) {
-    let div = document.createElement('div');
-    div.classList.add('item');
-
-    let h1 = document.createElement('h1');
-    h1.classList.add('heading');
-    h1.innerText = `Title: ${item.title}`;
-    h1.style.color = 'deeppink';
-
-    let div1 = document.createElement('div');
-    div1.classList.add('item');
-
-    let h = document.createElement('h1');
-    h.classList.add('heading');
-    h.innerText = `Month: ${item.monthDuration}`;
-    h.style.color = 'deeppink';
-
-    div.appendChild(h1);
-    div1.appendChild(h);
-    document.body.append(div, div1);
-
-}
+// for (let item of coursesAndDurationArray) {
+//     let div = document.createElement('div');
+//     div.classList.add('item');
+//
+//     let h1 = document.createElement('h1');
+//     h1.classList.add('heading');
+//     h1.innerText = `Title: ${item.title}`;
+//     h1.style.color = 'deeppink';
+//
+//     let div1 = document.createElement('div');
+//     div1.classList.add('item');
+//
+//     let h = document.createElement('h1');
+//     h.classList.add('heading');
+//     h.innerText = `Month: ${item.monthDuration}`;
+//     h.style.color = 'deeppink';
+//
+//     div.appendChild(h1);
+//     div1.appendChild(h);
+//     document.body.append(div, div1);
+//
+// }
