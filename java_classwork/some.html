@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Some</title>
+    <title>Title</title>
 </head>
 <body>
 <script>
     let some = JSON.parse(localStorage.getItem('some'));
-    for (const someElement of some) {
+    for (const user of some) {
         let userDiv = document.createElement('div');
         userDiv.innerText = user.name;
         document.body.append(userDiv);
-        
+
     }
 </script>
 
