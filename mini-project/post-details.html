@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Details</title>
+   <style>
+       .postDetails {
+           background: chartreuse;
+           color: black;
+           font-size: 25px;
+           border: solid 2px black;
+       }
+
+       .comment {
+           background: blue;
+           color: whitesmoke;
+           font-size: 20px;
+           border: solid 5px wheat;
+       }
+   </style>
+</head>
+<body>
+
+<div class="postDetails"></div>
+
+<ul class="comment"></ul>
+
+<script>
+    let url = new URL (location.href);
+    let post = JSON.parse(url.searchParams.get('data'));
+    console.log(post);
+
+    let posts = document.getElementsByClassName('postDetails')[0];
+    posts.innerText = `userID : ${JSON.stringify(post.userId)}
+                       ID : ${JSON.stringify(post.id)}
+                       Title : ${JSON.stringify(post.title)}
+                       Body : ${JSON.stringify(post.body)} `;
+
+    let commentsDetails = document.getElementsByClassName('comment')[0];
+    fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
+        .then(value => value.json())
+        .then(comments => {
+            for (let commentItem of comments) {
+                let olComment = document.createElement('li');
+                olComment.innerText = `NAME : ${commentItem.name}
+                                       EMAIL : ${commentItem.email}`;
+
+                commentsDetails.appendChild(olComment);
+
+            }
+
+        });
+
+</script>
+
+</body>
+</html>

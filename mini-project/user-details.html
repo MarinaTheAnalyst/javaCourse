@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Details</title>
+    <style>
+
+        .details {
+            background: antiquewhite;
+            color: brown;
+        }
+        .postsContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .anotherdetails {
+            background: aqua;
+            color: blue;
+            width: 420px;
+            height: 100px;
+            margin-top: 25px;
+            padding-top: 75px;
+
+        }
+    .button {
+        background: black;
+        color: white;
+        width: 30%;
+        margin-left: calc(50% - 150px);
+        margin-right: calc(50% - 150px);
+    }
+    </style>
+</head>
+<body>
+
+
+<div class="details"></div>
+<button class="button">post of current user</button>
+<div class="postsContainer">
+<div class="posts"></div>
+</div>
+<script>
+    let urlUser = new URL(location.href);
+    let detail = JSON.parse(urlUser.searchParams.get('data'));
+    console.log(detail);
+
+    let userDetails = document.getElementsByClassName('details')[0];
+    let postsDetails = document.getElementsByClassName('posts')[0];
+    let button = document.getElementsByClassName('button')[0];
+    userDetails.innerText = `ID : ${JSON.stringify(detail.id)}
+                            Name : ${JSON.stringify(detail.name)}
+                            Username : ${JSON.stringify(detail.username)}
+                            Email : ${JSON.stringify(detail.email)}
+                            Address : ${JSON.stringify(detail.address)}
+                            Phone : ${JSON.stringify(detail.phone)}
+                            Website : ${JSON.stringify(detail.website)}
+                            Company : ${JSON.stringify(detail.company)}
+                            `;
+
+    //         let data = `${JSON.stringify(detail)}`;
+    // for (let i = 0; i < data.length; i++) {
+    //     document.write("post" + i);
+    //     let obj = data[i];
+    //     for (const key in obj) {
+    //         let value = obj[key];
+    //         document.write(value);
+    //     }
+    // }
+
+
+            button.onclick = function () {
+                this.disabled = true;
+                fetch(`https://jsonplaceholder.typicode.com/users/${detail.id}/posts`)
+                    .then(value => value.json())
+                    .then(posts => {
+
+                        for (let post of posts) {
+                            let postDetails = document.createElement('div');
+                            postDetails.classList.add('anotherdetails');
+                            postDetails.innerText = `TITLE: ${post.title}`;
+
+                            let buttonPost = document.createElement('button')
+                            buttonPost.innerText = 'post - details';
+                            buttonPost.onclick = (id) => {
+                                location.href = `./post-details.html?data=${JSON.stringify(post)}`;
+                            };
+
+
+                            postsDetails.append(postDetails, buttonPost);
+
+                            }
+                            });
+
+
+
+            }
+    userDetails.appendChild(button);
+
+
+
+
+
+</script>
+</body>
+</html>
